@@ -27,6 +27,8 @@ extension ErrorPopoverRenderer {
     }
 }
 
+
+
 extension ErrorPopoverRenderer where Self: UIViewController {
 
     func presentError(errorOptions: ErrorOptions = ErrorOptions(), completion : ErrorRenderingCompletionBlock?) {
