@@ -87,8 +87,7 @@ extension UIView : ErrorPopoverRenderer {}
 let viewController = UIViewController()
 viewController.view.frame = CGRect(x: 0, y: 0, width: 375, height: 667)
 viewController.view.backgroundColor = UIColor.whiteColor()
-XCPShowView("Controller View", view: viewController.view)
-
+XCPlaygroundPage.currentPage.liveView = viewController
 let errorOptions = ErrorOptions(message: "OMG an error!", tintColor: UIColor.redColor())
 viewController.presentError(errorOptions) { () -> () in
     viewController.view.presentError()
